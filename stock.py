@@ -154,9 +154,9 @@ if calculate:
                         opt_vol = port_vol(optimal_weights, port_returns)
                         opt_sharpe = -min_func_sharpe(optimal_weights, port_returns, rf)
 
-                        # ==============================================
+                        
                         # PORTFOLIO METRICS SECTION
-                        # ==============================================
+                        
                         st.header("Optimal Portfolio Metrics")
                         col1, col2, col3 = st.columns(3)
                         col1.metric("Annual Return", f"{opt_ret * 100:.2f}%")
@@ -179,9 +179,9 @@ if calculate:
                         
                         st.table(combined_df)
 
-                        # ==============================================
+                        
                         # VISUALIZATIONS SECTION
-                        # ==============================================
+                        
                         col1, col2 = st.columns(2)
                         with col1:
                             fig_pie = px.pie(weights_df, values="Weight (%)", names="Stock", 
@@ -235,9 +235,9 @@ if calculate:
                         )
                         st.plotly_chart(fig_bench, use_container_width=True)
 
-                        # ==============================================
+                        
                         # MONTE CARLO SIMULATION SECTION
-                        # ==============================================
+                        
                         st.header("Monte Carlo Simulation Results")
                         
                         with st.spinner('Running Monte Carlo Simulation...'):
