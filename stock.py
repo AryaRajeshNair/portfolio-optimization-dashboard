@@ -13,9 +13,9 @@ st.write("""
 This dashboard calculates optimal portfolio weights to maximize the Sharpe ratio using selected stocks and date ranges.
 """)
 
-# ==============================================
+
 # SIDEBAR CONTROLS
-# ==============================================
+
 st.sidebar.header("Portfolio Inputs")
 
 # Portfolio selection inputs
@@ -44,9 +44,9 @@ mc_num_simulations = st.sidebar.number_input("Number of Simulations",
 
 calculate = st.sidebar.button("Calculate Optimal Portfolio & Run Simulation")
 
-# ==============================================
+
 # MAIN APP FUNCTIONS
-# ==============================================
+
 pd.options.display.float_format = '{:.4f}'.format
 np.set_printoptions(suppress=True)
 
@@ -122,9 +122,7 @@ def monte_carlo_simulation(daily_returns, years, initial_investment, sims, tradi
     
     return paths, mean, std
 
-# ==============================================
-# MAIN APP EXECUTION
-# ==============================================
+
 if calculate:
     tickers = [t.strip().upper() for t in ticker_input.split(",")]
     if not tickers or len(tickers) < 2:
