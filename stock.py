@@ -18,7 +18,7 @@ This dashboard calculates optimal portfolio weights to maximize the Sharpe ratio
 #lol
 =======
 ##
->>>>>>> origin/main
+>>>>>>> origin/main##
 # SIDEBAR CONTROLS
 
 st.sidebar.header("Portfolio Inputs")
