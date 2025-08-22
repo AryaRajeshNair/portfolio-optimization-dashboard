@@ -13,12 +13,7 @@ st.write("""
 This dashboard calculates optimal portfolio weights to maximize the Sharpe ratio using selected stocks and date ranges.
 """)
 
-<<<<<<< HEAD
-#lol
-#lol
-=======
-##
->>>>>>> origin/main##
+
 # SIDEBAR CONTROLS
 
 st.sidebar.header("Portfolio Inputs")
